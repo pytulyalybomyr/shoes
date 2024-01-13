@@ -38,13 +38,29 @@
 
             <nav class="info">
                 <ul>
-                    <li class="auth">
+                    <!-- <li class="auth">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 27 27" fill="none">
                             <path
                                 d="M26.4611 25.1198L20.2023 18.8623C22.0164 16.6844 22.9209 13.8911 22.7279 11.0632C22.5348 8.23541 21.259 5.59088 19.1658 3.67978C17.0726 1.76867 14.3231 0.738129 11.4895 0.802529C8.65579 0.866929 5.95603 2.02131 3.95181 4.02554C1.94758 6.02976 0.793198 8.72952 0.728798 11.5632C0.664399 14.3969 1.69494 17.1463 3.60605 19.2395C5.51715 21.3327 8.16168 22.6085 10.9895 22.8016C13.8173 22.9947 16.6107 22.0901 18.7886 20.2761L25.0461 26.5348C25.139 26.6277 25.2493 26.7014 25.3707 26.7517C25.4921 26.802 25.6222 26.8279 25.7536 26.8279C25.885 26.8279 26.0151 26.802 26.1365 26.7517C26.2579 26.7014 26.3682 26.6277 26.4611 26.5348C26.554 26.4419 26.6277 26.3316 26.678 26.2102C26.7283 26.0888 26.7541 25.9587 26.7541 25.8273C26.7541 25.6959 26.7283 25.5658 26.678 25.4444C26.6277 25.323 26.554 25.2127 26.4611 25.1198ZM2.75358 11.8273C2.75358 10.0473 3.28142 8.30722 4.27035 6.82718C5.25929 5.34714 6.6649 4.19358 8.30943 3.5124C9.95397 2.83121 11.7636 2.65298 13.5094 3.00024C15.2552 3.34751 16.8589 4.20468 18.1175 5.46335C19.3762 6.72202 20.2334 8.32567 20.5807 10.0715C20.9279 11.8173 20.7497 13.6269 20.0685 15.2715C19.3873 16.916 18.2338 18.3216 16.7537 19.3105C15.2737 20.2995 13.5336 20.8273 11.7536 20.8273C9.36744 20.8247 7.0798 19.8756 5.39254 18.1884C3.70529 16.5011 2.75623 14.2134 2.75358 11.8273Z"
                                 fill="black" />
                         </svg>
                         <h3>Пошук</h3>
+                    </li> -->
+                    <li class="cart" style="height: 36px;">
+                        <form action="/katalog.html" method="get">
+                            <button class="svg__submit" style="border: none; background: transparent;"
+                                type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"
+                                    viewBox="0 0 27 27" fill="none">
+                                    <path
+                                        d="M26.4611 25.1198L20.2023 18.8623C22.0164 16.6844 22.9209 13.8911 22.7279 11.0632C22.5348 8.23541 21.259 5.59088 19.1658 3.67978C17.0726 1.76867 14.3231 0.738129 11.4895 0.802529C8.65579 0.866929 5.95603 2.02131 3.95181 4.02554C1.94758 6.02976 0.793198 8.72952 0.728798 11.5632C0.664399 14.3969 1.69494 17.1463 3.60605 19.2395C5.51715 21.3327 8.16168 22.6085 10.9895 22.8016C13.8173 22.9947 16.6107 22.0901 18.7886 20.2761L25.0461 26.5348C25.139 26.6277 25.2493 26.7014 25.3707 26.7517C25.4921 26.802 25.6222 26.8279 25.7536 26.8279C25.885 26.8279 26.0151 26.802 26.1365 26.7517C26.2579 26.7014 26.3682 26.6277 26.4611 26.5348C26.554 26.4419 26.6277 26.3316 26.678 26.2102C26.7283 26.0888 26.7541 25.9587 26.7541 25.8273C26.7541 25.6959 26.7283 25.5658 26.678 25.4444C26.6277 25.323 26.554 25.2127 26.4611 25.1198ZM2.75358 11.8273C2.75358 10.0473 3.28142 8.30722 4.27035 6.82718C5.25929 5.34714 6.6649 4.19358 8.30943 3.5124C9.95397 2.83121 11.7636 2.65298 13.5094 3.00024C15.2552 3.34751 16.8589 4.20468 18.1175 5.46335C19.3762 6.72202 20.2334 8.32567 20.5807 10.0715C20.9279 11.8173 20.7497 13.6269 20.0685 15.2715C19.3873 16.916 18.2338 18.3216 16.7537 19.3105C15.2737 20.2995 13.5336 20.8273 11.7536 20.8273C9.36744 20.8247 7.0798 19.8756 5.39254 18.1884C3.70529 16.5011 2.75623 14.2134 2.75358 11.8273Z"
+                                        fill="black" />
+                                </svg></button>
+                            <!-- <input type="submit" value="Відправити"> -->
+                            <input style="background-color: transparent;" type="text" id="searchQuery" name="search"
+                                placeholder="Ваш пошуковий запит">
+
+
+                        </form>
                     </li>
                     <li class="cart">
                         <a href="../cart.html">
@@ -79,7 +95,7 @@
                             <button>Всі <span style="color: #228888a3;">New balance</span></button>
                         </div>
 
-                        <img src="../img/design/new-balance.png" alt="">
+                        <img src="../img/design/new-removebg-preview.png" alt="">
                     </div>
                 </swiper-slide>
                 <swiper-slide>
@@ -92,7 +108,7 @@
                             <button>Всі <span style="color: #228888a3;">Puma</span></button>
                         </div>
 
-                        <img src="../img/design/puma.png" alt="">
+                        <img src="../img/design/puma-removebg-preview.png" alt="">
                     </div>
                 </swiper-slide>
             </swiper-container>
@@ -303,11 +319,203 @@
     </section>
 </main>
 
+<footer>
+
+    <div class="footer__main">
+
+        <div class="container footerContainer">
+
+            <div class="footer-nav flex flex-around flex-start flex-g-1">
+
+                <div class="col flex flex-column flex-start flex-g-1">
+
+                    <span class="logo-holder">
+
+                        <img style="width: 116px; position: relative; left: -14px; bottom: -4px;" src="../img/logo.webp"
+
+                            alt="">
+
+                    </span>
+
+                    <p class="site-decription">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis
+
+                        id fames dolor.
+
+                    </p>
+
+                    <div class="social-medias flex flex-g-1">
+
+                        <a href="#" class="social-media flex">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+
+                                <path
+
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+
+                            </svg>
+
+                        </a>
+
+                        <a href="#" class="social-media flex">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+
+                                <path
+
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+
+                            </svg>
+
+                        </a>
+
+                        <a href="#" class="social-media flex">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+
+                                class="bi bi-github" viewBox="0 0 16 16">
+
+                                <path
+
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+
+                            </svg>
+
+                        </a>
+
+                        <a href="#" class="social-media flex">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+
+                                <path
+
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col flex flex-column flex-g-1 flex-start">
+
+                    <h2 class="col-title">Навігація</h2>
+
+                    <nav class="col-list">
+
+                        <ul>
+
+                            <li><a href="#">Каталог</a></li>
+
+                            <li><a href="#">Головна</a></li>
+
+                            <li><a href="#">Кошик</a></li>
+
+                            <li><a href="#">Контакти</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <!-- <div class="col flex flex-column flex-g-1 flex-start">
+
+                    <h3 class="col-title">Resources</h3>
+
+                    <nav class="col-list">
+
+                        <ul>
+
+                            <li><a href="#">Developer API</a></li>
+
+                            <li><a href="#">Tools</a></li>
+
+                            <li><a href="#">Blog</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </div> -->
+
+                <div class="col flex flex-column flex-g-1 flex-start">
+
+                    <h2 class="col-title">Контакти</h2>
+
+                    <nav class="col-list">
+
+                        <ul style="display: flex; flex-direction: column; gap: 4px;">
+
+                            <li style="display: flex;align-items: center;gap: 9px;"><svg
+
+                                    xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 26 26"
+
+                                    fill="none">
+
+                                    <path
+
+                                        d="M23.9187 16.8451L18.0299 14.2063L18.0137 14.1988C17.708 14.0681 17.3745 14.0156 17.0434 14.0462C16.7123 14.0767 16.3941 14.1893 16.1174 14.3738C16.0849 14.3954 16.0536 14.4187 16.0237 14.4438L12.9812 17.0376C11.0537 16.1013 9.0637 14.1263 8.12745 12.2238L10.7249 9.13509C10.7499 9.10384 10.7737 9.07259 10.7962 9.03884C10.9767 8.76297 11.0863 8.44674 11.1151 8.11831C11.1438 7.78987 11.091 7.45941 10.9612 7.15634V7.14134L8.31495 1.24259C8.14337 0.84667 7.84835 0.516858 7.47393 0.302387C7.09951 0.0879162 6.66576 0.000290007 6.23745 0.0525888C4.54366 0.275472 2.98892 1.1073 1.86361 2.39271C0.738307 3.67812 0.119385 5.3292 0.122448 7.03759C0.122448 16.9626 8.19745 25.0376 18.1224 25.0376C19.8308 25.0407 21.4819 24.4217 22.7673 23.2964C24.0527 22.1711 24.8846 20.6164 25.1074 18.9226C25.1598 18.4944 25.0724 18.0608 24.8582 17.6864C24.6439 17.312 24.3144 17.0169 23.9187 16.8451ZM18.1224 23.0376C13.8804 23.033 9.81343 21.3458 6.81386 18.3462C3.81428 15.3466 2.12708 11.2796 2.12245 7.03759C2.11775 5.81695 2.55751 4.63633 3.35962 3.71622C4.16173 2.79611 5.27133 2.19942 6.4812 2.03759C6.48071 2.04258 6.48071 2.0476 6.4812 2.05259L9.1062 7.92759L6.52245 11.0201C6.49622 11.0503 6.4724 11.0824 6.4512 11.1163C6.26309 11.405 6.15274 11.7373 6.13084 12.0812C6.10894 12.425 6.17623 12.7687 6.3262 13.0788C7.4587 15.3951 9.79245 17.7113 12.1337 18.8426C12.4462 18.9911 12.7918 19.0561 13.1369 19.0311C13.4819 19.0062 13.8146 18.8921 14.1024 18.7001C14.1345 18.6785 14.1654 18.6551 14.1949 18.6301L17.2337 16.0376L23.1087 18.6688C23.1087 18.6688 23.1187 18.6688 23.1224 18.6688C22.9626 19.8804 22.3668 20.9923 21.4465 21.7963C20.5262 22.6004 19.3445 23.0417 18.1224 23.0376Z"
+
+                                        fill="black" />
+
+                                </svg><a href="tel:+098 412 08 60">098 412 08 60</a></li>
+
+                            <li style="display: flex;align-items: center;gap: 9px;"><svg
+
+                                    xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 27 21"
+
+                                    fill="none">
+
+                                    <path
+
+                                        d="M25.2941 0.727417H1.29413C1.02891 0.727417 0.774558 0.832774 0.587022 1.02031C0.399485 1.20785 0.294128 1.4622 0.294128 1.72742V18.7274C0.294128 19.2578 0.504842 19.7666 0.879915 20.1416C1.25499 20.5167 1.7637 20.7274 2.29413 20.7274H24.2941C24.8246 20.7274 25.3333 20.5167 25.7083 20.1416C26.0834 19.7666 26.2941 19.2578 26.2941 18.7274V1.72742C26.2941 1.4622 26.1888 1.20785 26.0012 1.02031C25.8137 0.832774 25.5593 0.727417 25.2941 0.727417ZM13.2941 11.3712L3.86538 2.72742H22.7229L13.2941 11.3712ZM9.63288 10.7274L2.29413 17.4537V4.00117L9.63288 10.7274ZM11.1129 12.0837L12.6129 13.4649C12.7974 13.6343 13.0387 13.7282 13.2891 13.7282C13.5396 13.7282 13.7809 13.6343 13.9654 13.4649L15.4654 12.0837L22.7154 18.7274H3.86538L11.1129 12.0837ZM16.9554 10.7274L24.2941 3.99992V17.4549L16.9554 10.7274Z"
+
+                                        fill="black" />
+
+                                </svg><a href="mailto:pytulyalybomyr@gmail.com">pytulyalybomyr@gmail.com</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- There is no copyright. use as you wish -->
+
+            <div class="copyright">© 2022 – All Rights Reserved.</div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
 <!-- <script src="./js/cards.js"></script> -->
 
@@ -315,9 +523,7 @@
 
 <!-- <script src="./js/scroll.js"></script> -->
 
-<!-- <script src="./js/cart__sender.js"></script> -->
-
-<script src="./js/best_product.js"></script>
+<!-- <script src="./js/best__products.js"></script> -->
 
 <script src="./js/acd.js"></script>
 
@@ -336,6 +542,392 @@
     });
 
 </script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        const storedMinPrice = localStorage.getItem('minPrice') || 350;
+
+        const storedMaxPrice = localStorage.getItem('maxPrice') || 10000;
+
+
+
+        $("#slider-range").slider({
+
+            range: true,
+
+            min: 0,
+
+            max: 10000,
+
+            values: [storedMinPrice, storedMaxPrice],
+
+            step: 50,
+
+            slide: function (event, ui) {
+
+                $("#amount").val("$" + ui.values[0] + " - " + "$" + ui.values[1]);
+
+                $("#amount-display").text("$" + ui.values[0] + " - $" + ui.values[
+
+                    1]);
+
+                $(".min").text(ui.values[0])
+
+                $(".max").text(ui.values[1])
+
+
+
+                localStorage.setItem('minPrice', ui.values[0]);
+
+                localStorage.setItem('maxPrice', ui.values[1]);
+
+            }
+
+        });
+
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - " + "$" + $("#slider-range").slider(
+
+            "values", 1));
+
+        $("#amount-display").text("$" + $("#slider-range").slider("values", 0) + " - $" + $(
+
+            "#slider-range").slider("values", 1));
+
+
+
+        $(".min").text($("#slider-range").slider("values", 0))
+
+        $(".max").text($("#slider-range").slider("values", 1))
+
+
+
+
+
+    });
+
+</script>
+
+<!-- <script>
+
+    $(document).ready(function () {
+
+        $("#slider-range").slider({
+
+            range: true,
+
+            min: 0,
+
+            max: 10000,
+
+            values: [350, 10000],
+
+            step: 50,
+
+            slide: function (event, ui) {
+
+                $("#amount").val("$" + ui.values[0] + " - " + "$" + ui.values[1]);
+
+                $("#amount-display").text("$" + ui.values[0] + " - $" + ui.values[1]);
+
+                $(".min").text(ui.values[0]);
+
+                $(".max").text(ui.values[1]);
+
+
+
+                // Додатковий код для оновлення URL
+
+                updateURL(ui.values[0], ui.values[1]);
+
+            }
+
+        });
+
+
+
+        // Оновлення URL при завантаженні сторінки
+
+        updateURL($("#slider-range").slider("values", 0), $("#slider-range").slider("values", 1));
+
+        $(document).ready(function () {
+
+            $("#slider-range").slider({
+
+                range: true,
+
+                min: 0,
+
+                max: 10000,
+
+                values: [350, 10000],
+
+                step: 50,
+
+                slide: function (event, ui) {
+
+                    $("#amount").val("$" + ui.values[0] + " - " + "$" + ui.values[1]);
+
+                    $("#amount-display").text("$" + ui.values[0] + " - $" + ui.values[1]);
+
+                    $(".min").text(ui.values[0]);
+
+                    $(".max").text(ui.values[1]);
+
+
+
+                    // Додатковий код для оновлення URL
+
+                    updateURL(ui.values[0], ui.values[1]);
+
+                }
+
+            });
+
+
+
+            // Оновлення URL при завантаженні сторінки
+
+            updateURL($("#slider-range").slider("values", 0), $("#slider-range").slider("values", 1));
+
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - " + "$" + $(
+
+                "#slider-range").slider(
+
+                "values", 1));
+
+
+
+            // Допоміжна функція для оновлення URL
+
+            function updateURL(minValue, maxValue) {
+
+                const urlParams = new URLSearchParams(window.location.search);
+
+
+
+                // Оновлення параметрів ціни у URL
+
+                urlParams.set('minPrice', minValue);
+
+                urlParams.set('maxPrice', maxValue);
+
+
+
+                // Заміна поточного стану URL новим
+
+                const newURL = window.location.pathname + '?' + urlParams.toString();
+
+                window.history.replaceState({}, '', newURL);
+
+            }
+
+        });
+
+
+
+        // Допоміжна функція для оновлення URL
+
+        function updateURL(minValue, maxValue) {
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+
+
+            // Оновлення параметрів ціни у URL
+
+            urlParams.set('minPrice', minValue);
+
+            urlParams.set('maxPrice', maxValue);
+
+
+
+            // Заміна поточного стану URL новим
+
+            const newURL = window.location.pathname + '?' + urlParams.toString();
+
+            window.history.replaceState({}, '', newURL);
+
+        }
+
+    });
+
+</script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#slider-range").slider({
+
+            range: true,
+
+            min: 0,
+
+            max: 10000,
+
+            values: [350, 10000],
+
+            step: 50,
+
+            slide: function (event, ui) {
+
+                $("#amount").val("$" + ui.values[0] + " - " + "$" + ui.values[1]);
+
+                $("#amount-display").text("$" + ui.values[0] + " - $" + ui.values[
+
+                    1]);
+
+                $(".min").text(ui.values[0])
+
+                $(".max").text(ui.values[1])
+
+            }
+
+        });
+
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - " + "$" + $("#slider-range").slider(
+
+            "values", 1));
+
+        $("#amount-display").text("$" + $("#slider-range").slider("values", 0) + " - $" + $(
+
+            "#slider-range").slider("values", 1));
+
+
+
+        $(".min").text($("#slider-range").slider("values", 0))
+
+        $(".max").text($("#slider-range").slider("values", 1))
+
+
+
+        updateURL(storedMinPrice, storedMaxPrice);
+
+
+
+        // Допоміжна функція для оновлення URL
+
+        function updateURL(minValue, maxValue) {
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+
+
+            // Оновлення параметрів ціни у URL
+
+            urlParams.set('minPrice', minValue);
+
+            urlParams.set('maxPrice', maxValue);
+
+
+
+            // Заміна поточного стану URL новим
+
+            const newURL = window.location.pathname + '?' + urlParams.toString();
+
+            window.history.replaceState({}, '', newURL);
+
+        }
+
+    });
+
+</script> -->
+
+
+
+<!-- <script>
+
+    $(document).ready(function () {
+
+        // Отримання збережених значень ціни з локального сховища
+
+        const storedMinPrice = localStorage.getItem('minPrice') || 350;
+
+        const storedMaxPrice = localStorage.getItem('maxPrice') || 10000;
+
+
+
+        $("#slider-range").slider({
+
+            range: true,
+
+            min: 0,
+
+            max: 10000,
+
+            values: [storedMinPrice, storedMaxPrice],
+
+            step: 50,
+
+            slide: function (event, ui) {
+
+                $("#amount").val("$" + ui.values[0] + " - " + "$" + ui.values[1]);
+
+                $("#amount-display").text("$" + ui.values[0] + " - $" + ui.values[1]);
+
+                $(".min").text(ui.values[0]);
+
+                $(".max").text(ui.values[1]);
+
+
+
+                // Збереження значень ціни в локальному сховищі
+
+                localStorage.setItem('minPrice', ui.values[0]);
+
+                localStorage.setItem('maxPrice', ui.values[1]);
+
+
+
+                // Оновлення URL при завантаженні сторінки
+
+                updateURL(ui.values[0], ui.values[1]);
+
+            }
+
+        });
+
+
+
+        // Оновлення URL при завантаженні сторінки
+
+        updateURL(storedMinPrice, storedMaxPrice);
+
+
+
+        // Допоміжна функція для оновлення URL
+
+        function updateURL(minValue, maxValue) {
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+
+
+            // Оновлення параметрів ціни у URL
+
+            urlParams.set('minPrice', minValue);
+
+            urlParams.set('maxPrice', maxValue);
+
+
+
+            // Заміна поточного стану URL новим
+
+            const newURL = window.location.pathname + '?' + urlParams.toString();
+
+            window.history.replaceState({}, '', newURL);
+
+        }
+
+    });
+
+</script> -->
 
 
 
